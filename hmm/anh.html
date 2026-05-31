@@ -7,53 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+ 
     <header>
-    <h1>Chào mừng đến với Minecraft Create Mod Aeronautics</h1>
-    <hr>
+        <h1>Chào mừng đến với Minecraft Create Mod Aeronautics</h1>
+        <hr>
     </header>
-    <main>
+ 
+    <main id="main-content">
         <h2>Airship</h2>
         <p>1 trong những thứ thú vị nhất của create mod là Airship 1 trong những bản mở rộng của create mod</p>
         <img src="anhlinhtinh/taubay.jpg" alt="Airship trong Create Mod">
-        <h2>Những thứ cần biết: </h2>
-        <ul>
-            <li><a href="#hotair">Hot Air Balloon </a></li>
-            <li><a href="#assembler">Physics Assembler </a></li>
-            <li><a href="#engine"> Portable Engine</a></li>
-        </ul>
+ 
+        <h2>Những thứ cần biết:</h2>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#hotair">Hot Air Balloon</a></li>
+                <li><a href="#assembler">Physics Assembler</a></li>
+                <li><a href="#engine">Portable Engine</a></li>
+            </ul>
+        </nav>
+ 
         <h2>Tác dụng của từng vật phẩm</h2>
-        <h3 id="hotair">Hot Air Balloon</h3>
-        <img src="anhlinhtinh/translated_image_vi.png">
-        <br>
-        <p>Có thể dùng bao khí nóng (và loại có trục) để chế tạo khinh khí cầu. Khinh khí cầu phải được bao kín mọi chỗ trừ phần đáy.</p>
-        <p>Khi khinh khí cầu đủ lớn, nó có thể được sử dụng để điều khiển một thiết bị mô phỏng.
-        </p>
-
-        <h3 id="assembler">Physics Assembler</h3>
-        <img src="anhlinhtinh/Physics Assembler.png">
-        <br>
-        <p>
-            Khối lắp ráp vật lý là một khối quan trọng để tạo ra các Cấu trúc mô phỏng.
-            Khi được kích hoạt, các khối được kết nối bằng keo siêu dính hoặc keo mật ong sẽ biến thành một Cấu trúc vật lý (còn được gọi là cấp độ phụ) có thể di chuyển và xoay quanh trong thế giới.
-        </p>
-
-        <h3 id="engine">Portable Engine</h3>
-        <img src="anhlinhtinh/lonung.png">
-        <br>
-        <p>Một máy phát điện nhỏ, tương tự như Động cơ Lò nung (đã bị loại bỏ trong phiên bản v0.5).</p>
-        <p>Để kích hoạt động cơ, nhiên liệu phải được nạp bằng tay hoặc bằng phương pháp tự động.
-        Động cơ sẽ hoạt động miễn là vật liệu thường cháy trong lò nung thông thường.
-        Khi hoạt động, động cơ sẽ tạo ra 1024 SU ở tốc độ 32 vòng/phút.
-        Động cơ di động được chế tạo bằng một cụm động cơ , với một tấm sắt ở trên và một lò cao ở phía dưới.
-        </p>
-        <p>
+ 
+        <div class="item-grid">
+            <section class="item-card" id="hotair">
+                <h3>Hot Air Balloon</h3>
+                <img src="anhlinhtinh/translated_image_vi.png" alt="Hot Air Balloon">
+                <p>Có thể dùng bao khí nóng (và loại có trục) để chế tạo khinh khí cầu. Khinh khí cầu phải được bao kín mọi chỗ trừ phần đáy.</p>
+                <p>Khi khinh khí cầu đủ lớn, nó có thể được sử dụng để điều khiển một thiết bị mô phỏng.</p>
+            </section>
+ 
+            <section class="item-card" id="assembler">
+                <h3>Physics Assembler</h3>
+                <img src="anhlinhtinh/Physics Assembler.png" alt="Physics Assembler">
+                <p>Khối lắp ráp vật lý là một khối quan trọng để tạo ra các Cấu trúc mô phỏng.
+                Khi được kích hoạt, các khối được kết nối bằng keo siêu dính hoặc keo mật ong sẽ biến thành một Cấu trúc vật lý (còn được gọi là cấp độ phụ) có thể di chuyển và xoay quanh trong thế giới.</p>
+            </section>
+ 
+            <section class="item-card" id="engine">
+                <h3>Portable Engine</h3>
+                <img src="anhlinhtinh/lonung.png" alt="Portable Engine">
+                <p>Một máy phát điện nhỏ, tương tự như Động cơ Lò nung (đã bị loại bỏ trong phiên bản v0.5).</p>
+                <p>Để kích hoạt động cơ, nhiên liệu phải được nạp bằng tay hoặc bằng phương pháp tự động.
+                Động cơ sẽ hoạt động miễn là vật liệu thường cháy trong lò nung thông thường.
+                Khi hoạt động, động cơ sẽ tạo ra 1024 SU ở tốc độ 32 vòng/phút.</p>
+            </section>
+        </div>
+ 
+        <p class="reference">
             Tham khảo thêm:
-            <a href="https://www.curseforge.com/minecraft/mc-mods/create"
-               target="_blank">
-               Create Mod trên CurseForge
+            <a href="https://www.curseforge.com/minecraft/mc-mods/create" target="_blank">
+                Create Mod trên CurseForge
             </a>
         </p>
     </main>
-
 </body>
 </html>

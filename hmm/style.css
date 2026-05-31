@@ -1,35 +1,122 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+/* ===== General / Reset ===== */
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', Arial, sans-serif;
     background-color: #1c1c1c;
     color: #d2b48c;
     line-height: 1.6;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
 }
 
+/* ===== Skip Link ===== */
+.skip-link {
+    display: block;
+    width: max-content;
+    position: absolute;
+    top: -999px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #c68642;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* ===== Header ===== */
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     background-color: #3b2a1a;
     padding: 15px;
+    box-sizing: border-box;
 }
 
+hr {
+    width: 80%;
+    border: 1px solid #5c4033;
+}
+
+/* ===== Main ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* ===== Headings & Text ===== */
 h1, h2, h3 {
     color: #c68642;
 }
 
 p {
     width: 80%;
-    margin: 10px auto;
 }
 
-ul {
-    list-style-position: inside;
+/* ===== Navigation List ===== */
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: disc;
+    gap: 16px;
+    padding: 0;
 }
 
-li {
-    margin: 8px 0;
+.nav-list li {
+    margin: 4px 0;
 }
 
+/* ===== Item Grid ===== */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* ===== Item Card ===== */
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a1f14;
+    border: 2px solid #5c4033;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* ===== Images ===== */
+img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    border: 3px solid #5c4033;
+}
+
+/* ===== Links ===== */
 a {
     color: #e6b566;
     text-decoration: none;
@@ -39,14 +126,9 @@ a:hover {
     color: white;
 }
 
-img {
-    width: 500px;
-    max-width: 100%;
-    display: block;
-    margin: 15px auto;
-    border: 3px solid #5c4033;
-}
-
-hr {
-    border: 1px solid #5c4033;
+/* ===== Reference paragraph ===== */
+.reference {
+    width: 80%;
+    margin-top: 24px;
+    text-align: center;
 }
