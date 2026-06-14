@@ -1,0 +1,129 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f5f4f0;
+  color: #1a1a18;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  border-bottom: 0.5px solid #d3d1c7;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #1a1a18;
+}
+
+.header .subtitle {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #888780;
+}
+
+/* ===== Main container ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ===== Preview box ===== */
+#image {
+  width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  border: 0.5px solid #d3d1c7;
+  background-color: #ebe9e2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: background-image 0.2s ease, background-color 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+#caption {
+  font-size: 0.9rem;
+  color: #5f5e5a;
+  background-color: rgba(245, 244, 240, 0.9);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: 0.5px solid #d3d1c7;
+  pointer-events: none;
+  text-align: center;
+  max-width: 80%;
+  transition: opacity 0.15s ease;
+}
+
+/* Khi có ảnh nền thì caption nằm góc dưới */
+#image.has-image {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#image.has-image #caption {
+  margin: 0 0 1rem 1rem;
+  background-color: rgba(26, 26, 24, 0.65);
+  color: #f5f4f0;
+  border-color: transparent;
+}
+
+/* ===== Thumbnail grid ===== */
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 0.5px solid #d3d1c7;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.03);
+  border-color: #888780;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.thumb:focus-visible {
+  outline: 2px solid #534AB7;
+  outline-offset: 2px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .thumbs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #image {
+    height: 220px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
